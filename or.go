@@ -26,4 +26,15 @@
 //
 // All of these functions guarantee that they will not return normally when
 // presented with a non-nil error.
+//
+// It would be preferable to write the parameter lists for the Fataln and Handlen
+// functions in the opposite order to that given here. For example,
+//
+// func Fatal1[T1 any](f Fataler) func(t1 T1, e error) T1
+//
+// However, current versions of Go (1.21.5 as of this writing) do not allow this
+// function to be used without explicit instantiation, as documented in
+// [this proposal](https://github.com/golang/go/issues/64197#issuecomment-1814245087).
+// If that proposal is implemented, then the functions here may be changed to
+// the preferred order.
 package or

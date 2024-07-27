@@ -1,4 +1,4 @@
-# Go tests
+# Go error handling
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/pat42smith/or.svg)](https://pkg.go.dev/github.com/pat42smith/or)
 
